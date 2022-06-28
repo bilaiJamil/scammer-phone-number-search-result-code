@@ -15,3 +15,16 @@
 			<?php 
 			} ?>   
 		</div>
+
+
+<?php
+			if ($post['post_category'] != "") { ?> 
+			<div class="col-md-12 nolpad hidden-sm hidden-xs font-sm text-left">
+				%%%category%%% 
+				<a class="bold" title="<?php echo $dc['data_name']; ?> - <?php echo $post['post_category']; ?>" href="/<?php echo $dc['data_filename']; ?>?category[]=<?php echo $post['post_category']; ?>">
+					<?php echo $post['post_category']; ?>
+				</a> 
+			</div>
+			<?php 
+			} ?>
+
